@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+// INSECURE CREDENTIAL MOCK PATH FOR TASK 3.3
+const MOCK_AWS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"; 
+
 // Base functional validation endpoint
 app.get('/api/v1/status', (req, res) => {
   res.status(200).json({ status: 'green', message: 'API is secure and functional' });
